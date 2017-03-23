@@ -1,0 +1,447 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 21, 2017, 10:35:55 AM
+    Author     : alam
+*/
+
+body{
+    margin: 0 auto;
+}
+header{}
+
+header section:first-child{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #0c1961;
+    color: #fff;
+    padding: 12px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header section div:nth-child(1){
+    flex-basis: 10%;
+    margin: auto 0;
+}
+
+header section nav{
+    flex-basis: 40%;
+    margin: auto 0;
+}
+header section nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+header section nav ul li{
+    flex: 1;
+    padding: 8px;
+    color: #FFF;
+    border-radius: 15px;
+    transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    -o-transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    cursor: pointer;
+}
+header section nav ul li:hover{
+    border-radius: 15px;
+    background: #071042;
+}
+
+header section div:nth-child(3){
+    flex-basis: 30%;
+    margin: auto 0;
+    position: relative;
+}
+
+header section input[type="text"]{
+    width: 75%;
+    border: 0px;
+    height: 26px;
+    border-radius: 16px;
+    padding: 3px 15px;
+    background: #071042;
+    color: #eee;
+    font-size: 15px;
+}
+header section input:focus{
+    outline: none;
+}
+header section form i{
+    position: absolute;
+    top: 8px;
+    right: 45px;
+    color: #888;
+}
+
+header section div:nth-of-type(3){
+    flex-basis: 10%;
+    margin: auto 0;
+}
+header section button{
+    border: none;
+    background: #3dc31d;
+    padding: 8px 20px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+header section:last-child{
+    background: #fff;
+    color: #333;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+}
+header section:last-child div:nth-child(1){
+    flex-basis: 15%;
+    text-align: center;
+}
+header section:last-child div:nth-child(1) h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+header section:last-of-type div:nth-child(2){
+    flex-basis: 75%;
+    margin-top: 8px;
+}
+header section:last-of-type div:nth-child(2) a{
+    padding: 3px 16px;
+    background: #ceebef;
+    color: #0b3c52;
+    border-radius: 3px;    
+}
+
+section > div{
+    position: relative;
+}
+section div img{
+    width: 100%;
+}
+section > div > div{
+    position: absolute;
+    top: 12%;
+    left: 25%;
+}
+section > div > div h3{
+    margin: 0px;
+    font-size: 29px;
+    color: #1b2d8e;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 10px;
+}
+section > div > div p{
+    margin: 0px;
+    color: #091038;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+}
+
+/*MAIN*/
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*ARTICAL*/
+article{
+    flex-basis: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+article > div{
+    width: 30%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 2px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 9px -3px;
+}
+article > div:nth-of-type(3n+3){
+    margin-right: 0px;
+}
+article > div > img{
+    width: 100%;
+    height: 170px;
+    border-radius: 3px;
+}
+article > div h3,p{
+    padding: 0px 8px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+article > div h3{
+    margin: 0px;
+    color: #1b2d8e;
+}
+article > div p{
+    margin: 0px;
+    color: #797979;
+}
+
+article > div > div{
+    text-align: justify;
+    padding: 7px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+article > div > div span{
+    padding-right: 15px;
+    color: #989696;
+}
+article > div > div strong{
+    color: #1b2d8e;
+}
+
+main > article > nav{
+    margin: 20px auto;
+    text-align: center;
+}
+main > article > nav ul{
+    list-style: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+main > article > nav ul li{
+    float: left;
+    margin-right: 10px;
+}
+main > article > nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 10px;
+    background: #dedede;
+    color: #939393;
+    border-radius: 3px;
+    cursor: pointer;
+}
+main > article > nav ul li a:hover{
+    background: #6cf072;
+    color: #fff;
+}
+
+/*ASID BAR*/
+
+aside{
+    flex-basis: 20%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside > div:nth-child(1){
+    box-shadow: 0px 0px 7px -3px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+aside > div:nth-child(1) h1{
+    margin: 0px;
+    padding: 15px;
+}
+aside > div:nth-child(1) p{
+    padding: 0 15px;
+    margin: 0px;
+    color: #1b2d95;
+    line-height: 47px;
+}
+
+aside > div:nth-child(2){
+    margin: 20px 0px;
+}
+aside > div:nth-child(2) img{
+    width: 100%;
+}
+
+aside > div:nth-child(3){
+    /*box-shadow: 0px 0px 7px -3px;*/
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+aside > div:nth-child(3) > h1{
+    margin: 0px;
+    padding: 15px 0px;
+}
+aside > div:nth-child(3) > div{
+    display: flex;
+    margin-bottom: 10px;
+}
+aside > div:nth-child(3) > div > div:nth-child(1){
+    flex: 1;  
+}
+aside > div:nth-child(3) > div > div:nth-child(2){
+    flex: 2;
+    border: 1px solid;
+}
+aside > div:nth-child(3) > div > div img{
+    width: 100%;
+    height: 100%;
+}
+aside > div:nth-child(3) > div > div h4{
+    margin: 0px;
+    padding: 0px 8px;
+}
+aside > div:nth-child(3) > div > div p{
+    margin: 0px;
+    padding: 0px 8px;
+    font-size: 12px;
+}
+aside > div:nth-child(3) > div > div span:nth-of-type(1){
+    padding-left: 8px;
+}
+aside > div:nth-child(3) > div > div span{
+    font-size: 12px;
+}
+aside > div:nth-child(3) > div > div span:last-child{
+    color: #aaa;
+    float: right;
+    padding: 5px;
+}
+
+aside >div:nth-child(3) > div >div:nth-child(2) > span > i{
+    color: #f09; 
+}
+aside >div:nth-child(3) > div >div:nth-child(2) > span:last-child > i{
+    color: #aaa; 
+}
+
+aside > div:nth-child(4){
+    margin-top: 45px;
+}
+aside > div:nth-child(4) > h1{
+    font-size: 25px;
+}
+aside > div:nth-child(4) > div{
+    display: flex;
+}
+aside > div:nth-child(4) > div {
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 6px -4px #aaa;
+    margin-top: 25px;
+    cursor: pointer;
+}
+aside > div:nth-child(4) > div > div:nth-child(1){
+    flex: 1;
+    text-align: center;
+    padding: 15px 0px;
+}
+aside > div:nth-child(4) > div > div:nth-child(2){
+    flex: 3;
+}
+aside > div:nth-child(4) > div > div:nth-child(1) > i{
+    font-size: 50px;
+    position: relative;
+    color: #aaa;
+}
+aside > div:nth-child(4) > div:hover > div:nth-child(1) > i{ 
+    color: #6cf072;
+}
+aside > div:nth-child(4) > div > div:nth-child(1) > i:after{
+    content: "244";
+    font-size: 12px;
+    position: absolute;
+    left: 13px;
+    z-index: 3333333;
+    color: #fff;
+    top: 20px;
+    font-weight: 600;
+}
+aside > div:nth-child(4) > div > div:nth-child(2) > p{
+    color: #1b2d8e;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+aside > div:nth-child(4) > div > div:nth-child(2) > span{
+    color: #aaa;
+    padding: 0px 8px;
+}
+
+/*Footer*/
+
+footer{
+    margin-top: 40px;
+}
+footer > section:nth-child(1){
+    display: flex;
+    justify-content: center;
+    background: #060d30;
+    padding: 10px 0px;
+}
+footer > section:nth-child(1) > div{
+    width: 90%;
+    height: 50px;
+    margin: auto 0px
+}
+footer > section:nth-child(1) > div > p{
+    color: #fff;
+    padding: 5px 0px;
+}
+footer > section:nth-child(1) > div > p > i{
+    font-size: 35px;
+    padding-right: 6px;
+}
+footer > section:nth-child(1) > div > p > strong{
+    color: #6cf072;
+}
+footer > section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+footer > section:nth-child(2) > div:nth-child(1){
+    width: 30%;
+}
+footer > section:nth-child(2) > div:nth-child(1) > p > span{
+    color: #aaa;
+}
+
+footer > section:nth-child(2) > div:nth-child(2){
+    width: 50%;
+}
+footer > section:nth-child(2) > div:nth-child(2) > nav > ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+footer > section:nth-child(2) > div:nth-child(2) > nav > ul li{
+    float: left;
+}
+footer > section:nth-child(2) > div:nth-child(2) > nav > ul li a{
+    color: #aaa;
+    padding: 6px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.6s ease all;
+}
+footer > section:nth-child(2) > div:nth-child(2) > nav > ul li a:hover{
+    color: #FFF;
+    background: #aaa;
+}
+footer > section:nth-child(2) > div:nth-child(3){
+    width: 10%;
+}
+footer > section:nth-child(2) > div:nth-child(3) > a{
+    padding: 12px 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 0px 4px #aaa;
+    cursor: pointer;
+}
