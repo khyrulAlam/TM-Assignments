@@ -125,29 +125,53 @@ header section:last-of-type div:nth-child(2) a{
 
 section > div{
     position: relative;
+    overflow: hidden;
 }
 section div img{
     width: 100%;
 }
-section > div > div{
+section > div > div:nth-of-type(1){
     position: absolute;
     top: 12%;
     left: 25%;
+    right: 10%;
 }
-section > div > div h3{
+section > div > div:nth-of-type(1) h3{
     margin: 0px;
-    font-size: 29px;
+    font-size: 32px;
     color: #1b2d8e;
     font-family: 'Open Sans', sans-serif;
     padding: 0px 10px;
 }
-section > div > div p{
+section > div > div:nth-of-type(1) p{
     margin: 0px;
     color: #091038;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     padding: 15px;
 }
+
+section > div > div:last-child{
+    background: red;
+    position: absolute;
+    right: -120px;
+    top: -25px;
+    color: #fff;
+    transform: rotate(53deg);
+    padding-top: 77px;
+    padding-left: 40px;
+    padding-right: 65px;
+    padding-bottom: 11px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+section > div > div:last-child > h6{
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
 
 /*MAIN*/
 
@@ -253,7 +277,7 @@ aside > div:nth-child(1){
 }
 aside > div:nth-child(1) h1{
     margin: 0px;
-    padding: 15px;
+    padding: 10px 15px;
 }
 aside > div:nth-child(1) p{
     padding: 0 15px;
