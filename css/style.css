@@ -258,7 +258,7 @@ main > article > nav ul li a{
     cursor: pointer;
 }
 main > article > nav ul li a:hover{
-    background: #6cf072;
+    background: #90c400;
     color: #fff;
 }
 
@@ -270,9 +270,8 @@ aside{
 }
 
 aside > div:nth-child(1){
-    box-shadow: 0px 0px 7px -3px;
     border-radius: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding-bottom: 5px;
 }
 aside > div:nth-child(1) h1{
@@ -284,6 +283,7 @@ aside > div:nth-child(1) p{
     margin: 0px;
     color: #1b2d95;
     line-height: 47px;
+    font-weight: 600;
 }
 
 aside > div:nth-child(2){
@@ -339,7 +339,7 @@ aside > div:nth-child(3) > div > div span:last-child{
 }
 
 aside >div:nth-child(3) > div >div:nth-child(2) > span > i{
-    color: #f09; 
+    color: #ff7315; 
 }
 aside >div:nth-child(3) > div >div:nth-child(2) > span:last-child > i{
     color: #aaa; 
@@ -374,7 +374,7 @@ aside > div:nth-child(4) > div > div:nth-child(1) > i{
     color: #aaa;
 }
 aside > div:nth-child(4) > div:hover > div:nth-child(1) > i{ 
-    color: #6cf072;
+    color: #90c400;
 }
 aside > div:nth-child(4) > div > div:nth-child(1) > i:after{
     content: "244";
