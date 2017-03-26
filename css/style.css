@@ -55,7 +55,7 @@ header section nav ul li:hover{
 }
 
 header section div:nth-child(3){
-    flex-basis: 30%;
+    flex-basis: 25%;
     margin: auto 0;
     position: relative;
 }
@@ -81,7 +81,7 @@ header section form i{
 }
 
 header section div:nth-of-type(3){
-    flex-basis: 10%;
+    flex-basis: 15%;
     margin: auto 0;
 }
 header section button{
@@ -304,7 +304,7 @@ aside > div:nth-child(3) > h1{
 }
 aside > div:nth-child(3) > div{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 aside > div:nth-child(3) > div > div:nth-child(1){
     flex: 1;  
@@ -437,7 +437,7 @@ footer > section:nth-child(2) > div:nth-child(1) > p > span{
 }
 
 footer > section:nth-child(2) > div:nth-child(2){
-    width: 50%;
+    width: 60%;
 }
 footer > section:nth-child(2) > div:nth-child(2) > nav > ul{
     list-style: none;
@@ -446,6 +446,7 @@ footer > section:nth-child(2) > div:nth-child(2) > nav > ul{
 }
 footer > section:nth-child(2) > div:nth-child(2) > nav > ul li{
     float: left;
+    padding: 5px 0px;
 }
 footer > section:nth-child(2) > div:nth-child(2) > nav > ul li a{
     color: #aaa;
@@ -459,13 +460,24 @@ footer > section:nth-child(2) > div:nth-child(2) > nav > ul li a:hover{
     color: #FFF;
     background: #aaa;
 }
-footer > section:nth-child(2) > div:nth-child(3){
-    width: 10%;
-}
-footer > section:nth-child(2) > div:nth-child(3) > a{
-    padding: 12px 16px;
+
+
+body > a {
+    position: fixed;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 0px 0px 0px 4px #aaa;
     cursor: pointer;
+    width: 35px;
+    height: 35px;
+    right: 70px;
+    bottom: 12px;
+    font-size: 1.6em;
+    font-weight: 600;
+    box-shadow: 0 0 0px 4px #a5a5a5;
+}
+
+body > a > i {
+    color: #a5a5a5;
+    padding-left: 10px;
+    padding-top: 1px;
 }
